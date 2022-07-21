@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputContainer h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputContainer h1 span{
+    color: var(--primary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputContainer div{
+    display: flex;
+    margin-bottom: 2rem;
+    width: 600px;
 }
 
-.App-link {
-  color: #61dafb;
+.inputContainer input{
+    width: 100%;
+    padding: 0.5rem 0.2rem 0.5rem 0;
+    text-indent: 1rem;
+    border:none;
+    outline: none;
+    font-size: 1rem;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputContainer input::placeholder{
+    font-size: 1rem;
+}
+
+.inputContainer button{
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    height: 3rem;
+    text-transform: uppercase;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+
+}
+
+/* result */
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+
+}
+.result a{
+    padding: 0.5rem 1rem;
+    color: white;
+    border: 1px solid var(--primary-color);
+    margin-right: 1rem;
+}
+
+.result button{
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.result button.copied{
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.noData{
+    font-size: 1rem;
+    color: #fff;
 }
